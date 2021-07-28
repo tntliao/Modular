@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>02_namespace模式</title>
+</head>
+
+<body>
+  <script type='text/javascript' src='module1.js'></script>
+  <script type='text/javascript'>
+    console.log(myModule.data);
+    myModule.foo();
+    myModule.bar();
+
+    myModule.data = 'other data'; //能直接修改模块内部的数据
+    console.log(myModule.data);
+  </script>
+</body>
+
+</html>
